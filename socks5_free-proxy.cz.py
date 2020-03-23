@@ -5,12 +5,6 @@ import time
 import traceback
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-#from selenium.webdriver.common.by import By
-#from selenium.common.exceptions import NoSuchElementException
-#from selenium.webdriver.common.keys import Keys
-
-#os.system('taskkill /im chromedriver.exe /f')
-#os.system('taskkill /im chrome.exe /f')
 
 my_getdir = os.path.dirname(os.path.abspath(__file__))
 print(my_getdir)
@@ -20,13 +14,15 @@ options.add_argument("--headless")  # скрытый режим
 
 print()
 
-try:
-    proxy = []
+proxy = []
     options.binary_location = "D:\\Program Files\\GoogleChromePortable\\App\\Chrome-bin\\chrome.exe"
     browser = webdriver.Chrome(chrome_options=options, executable_path=my_getdir+r'\\chromedriver.exe')
     #browser.set_window_position(800, 50)
     #browser.set_window_size(500, 300)
     browser.get('http://free-proxy.cz/')
+
+try:
+    
 
     print()
 
