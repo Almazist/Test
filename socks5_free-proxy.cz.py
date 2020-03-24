@@ -15,14 +15,13 @@ options.add_argument("--headless")  # скрытый режим
 print()
 
 proxy = []
-    options.binary_location = "D:\\Program Files\\GoogleChromePortable\\App\\Chrome-bin\\chrome.exe"
-    browser = webdriver.Chrome(chrome_options=options, executable_path=my_getdir+r'\\chromedriver.exe')
-    #browser.set_window_position(800, 50)
-    #browser.set_window_size(500, 300)
-    browser.get('http://free-proxy.cz/')
+options.binary_location = "D:\\Program Files\\GoogleChromePortable\\App\\Chrome-bin\\chrome.exe"
+browser = webdriver.Chrome(chrome_options=options, executable_path=my_getdir+r'\\chromedriver.exe')
+#browser.set_window_position(800, 50)
+#browser.set_window_size(500, 300)
+browser.get('http://free-proxy.cz/')
 
 try:
-    
 
     print()
 
@@ -78,6 +77,6 @@ with open(my_getdir+"\\proxy.txt", "w") as f:
         f.write(str(s) + '\n')
 
 
-print("Добавлено: "+str(i))
+print("Added: "+str(i))
 print("OK")
 time.sleep(5)
