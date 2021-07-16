@@ -32,6 +32,7 @@ if __name__ == '__main__':
     result2 = square(x)
     print(result)
     print(result2)
+
     print()
     x = 2
     result = lambda: x ** 2
@@ -39,3 +40,27 @@ if __name__ == '__main__':
     result2 = lambda: x ** 2
     print(result())
     print(result2())
+
+    print()
+    x = 2
+    result = lambda x: x ** 2
+    x = 3
+    result2 = lambda x: x** 2
+    print(result(x))
+    print(result2(x))
+
+
+    print()
+    ints=list(range(10))
+    print(list(map(lambda y:y**2, filter(lambda x:x%2==0, ints))))
+    print(list(map(lambda y: y ** 2, filter(lambda x: x % 2 == 0, ints))))
+
+
+
+
+
+
+
+
+
+
