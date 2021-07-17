@@ -1,7 +1,2 @@
-<<<<<<< HEAD
+
 54324364564
-=======
-test
->>>>>>> origin/master
-test2
-test4
